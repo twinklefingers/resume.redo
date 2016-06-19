@@ -1,0 +1,118 @@
+/* Reset default broswer styles*/
+html head body header main aside summary section p h1 ol li b ul time {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+
+    } 
+
+/* Animate background image */
+@keyframes animateBG {
+    from {
+        background-image: url("http://66.media.tumblr.com/0c3a69e69ca69a25c0c91ffe5873484b/tumblr_o6ot8rc2R01qhcqvjo1_1280.jpg");
+    }
+    to {
+        background-image: url("https://41.media.tumblr.com/3326852f397184a2b4d9389881330b3c/tumblr_n3ma4kFgqS1t6uw5ro1_500.png");
+    }
+}
+
+body {
+    background-image: url("https://41.media.tumblr.com/3326852f397184a2b4d9389881330b3c/tumblr_n3ma4kFgqS1t6uw5ro1_500.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-color: hsla(300, 100%, 10%, 1.0); /*added as a fallback, graceful degradation*/
+    font-family: Verdana, Geneva, sans-serif;
+    overflow-x:hidden;
+    animation-name: animateBG;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+header {
+    text-align: center;
+    margin:5px -10px 5px;
+    padding: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Courier;
+    color: #AEDDF5;
+    background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+/* Animate <main> background color*/
+@keyframes animateMain {
+    from {
+        background-color: #E6E6FA;
+    }
+    to {
+
+        background-color: hsla(51, 100%, 50%, .9);
+    }
+}
+
+main {
+    background-color: hsla(51, 100%, 50%, .9);
+    width: 800px;
+    margin: 10px auto 50px;
+    border-right: 3px solid black; 
+    border-left: 3px solid black;
+    padding: 25px;
+    animation-name: animateMain;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+aside {
+    line-height: 75%;
+    font-size: 16px;
+    text-align: right;
+    float: right;
+    margin: 10px;
+}
+
+
+summary {
+    width: 300px;
+    height: 125px;
+    font-size: 35px;
+    font-family: Courier;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 0 0 20px;
+    padding: 75px;
+    text-shadow: 1px 2px 2px #000;
+}
+
+summary:hover {
+    color:red;
+}
+
+b:hover {
+    color:red;
+}
+
+a {
+    color: red;
+}
+
+time {
+    float: right;
+    font-style: italic;
+    padding:3px 0 0 0;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+ol > li {
+    font-size: 20px;
+    border-bottom: 5px dotted #333333;
+    margin: 15px 0 15px 0;
+}
+
+
